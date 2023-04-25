@@ -1,0 +1,19 @@
+{
+  "MaintenancePlanCategory": "PM",
+  "Strategy": "TEST",
+  "MaintenancePlan": "UAT MECH Maintenance Plan(Ex:)",
+  "MaintenanceItem": "UAT MECH Maintenance Plan(Ex:)",
+  "Equipment": "101103951",
+  "OrderType": "AG01",
+  "MaintActivityType": "SR",
+  "DoNotRelImmediately": true,
+  "FuncLocTaskList": false,
+  "EquipTaskList": false,
+  "Group": "I_ANALPG",
+  "TaskListDescription": "TEST TASK LIST",
+  "CallHorizonNumber": "95",
+  "CallHorizonUnit": "DAY",
+  "SchedulingPeriodNumber": "10",
+  "SchedulingPeriodUnit": "DAY",
+  "CompletionRequirement": false
+}

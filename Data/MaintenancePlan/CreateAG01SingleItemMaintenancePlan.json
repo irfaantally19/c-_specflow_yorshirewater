@@ -1,0 +1,19 @@
+{
+  "MaintenancePlanCategory": "PM",
+  "Strategy": "AAA011",
+  "MaintenancePlan": "AUTO Testing",
+  "MaintenanceItem": "AUTO Testing",
+  "Equipment": "101103951",
+  "OrderType": "AG01",
+  "MaintActivityType": "SR",
+  "DoNotRelImmediately": true,
+  "FuncLocTaskList": false,
+  "EquipTaskList": false,
+  "Group": "I_ANALPZ",
+  "TaskListDescription": "AAA011 Task List Header",
+  "CallHorizonNumber": "95",
+  "CallHorizonUnit": "DAY",
+  "SchedulingPeriodNumber": "10",
+  "SchedulingPeriodUnit": "DAY",
+  "CompletionRequirement": false
+}

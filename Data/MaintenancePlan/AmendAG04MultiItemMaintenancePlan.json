@@ -1,0 +1,9 @@
+{
+  "MaintenancePlan": "UAT Testing",
+  "MaintenanceItem": "UAT Testing",
+  "Equipment": "101104225",
+  "OrderType": "AG04",
+  "MaintActivityType": "ARO",
+  "MaintPlannerGroup": "ICA",
+  "DoNotRelImmediately": true
+}

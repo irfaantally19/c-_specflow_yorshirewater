@@ -1,0 +1,13 @@
+{
+  "MaintenancePlan": "AUTO Testing",
+  "MaintenanceItem": "AUTO Testing",
+  "Equipment": "101104225",
+  "OrderType": "AG03",
+  "MaintActivityType": "RM",
+  "MaintPlannerGroup": "ICA",
+  "DoNotRelImmediately": true,
+  "FuncLocTaskList": false,
+  "EquipTaskList": false,
+  "Group": "I_ANALPZ",
+  "TaskListDescription": "AAA011 Task List Header"
+}

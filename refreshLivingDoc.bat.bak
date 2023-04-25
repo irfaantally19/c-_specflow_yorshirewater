@@ -1,0 +1,2 @@
+livingdoc test-assembly M:\AutomationTestHRSP\bin\Debug\net6.0\SAP.dll -t "M:\AutomationTestHRSP\bin\Debug\net6.0\TestExecution.json"
+pause

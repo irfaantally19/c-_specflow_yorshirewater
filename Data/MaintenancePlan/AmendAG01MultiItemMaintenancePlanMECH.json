@@ -1,0 +1,8 @@
+{
+  "MaintenancePlan": "UAT Testing MP Plan 3",
+  "MaintenanceItem": "UAT Testing MP Plan 3",
+  "Equipment": "101151420",
+  "OrderType": "AG01",
+  "MaintActivityType": "SCE",
+  "DoNotRelImmediately": true
+}

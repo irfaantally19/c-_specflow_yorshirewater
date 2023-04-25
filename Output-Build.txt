@@ -1,0 +1,12 @@
+﻿Build started...
+1>------ Build started: Project: SAP, Configuration: Debug Any CPU ------
+1>SpecFlowFeatureFiles: Features\ManagerRequestPromotions.feature;Features\ManagerTransfers.feature;Features\PayrollSimulation.feature;Features\VoluntaryResignation.feature
+1>SpecFlowGeneratedFiles: Features\ManagerRequestPromotions.feature.cs
+1>SpecFlowGeneratedFiles: Features\ManagerTransfers.feature.cs
+1>SpecFlowGeneratedFiles: Features\PayrollSimulation.feature.cs
+1>SpecFlowGeneratedFiles: Features\VoluntaryResignation.feature.cs
+1>Skipping analyzers to speed up the build. You can execute 'Build' or 'Rebuild' command to run analyzers.
+1>M:\Automation Test HRSP Latest\Pages\SAP_GUI\SAPWindow.cs(16,21,16,29): warning CS0108: 'SAPWindow.CloseSAP()' hides inherited member 'SAPSupport.CloseSAP()'. Use the new keyword if hiding was intended.
+1>SAP -> M:\Automation Test HRSP Latest\bin\Debug\net6.0\SAP.dll
+1>Done building project "SAP.csproj".
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

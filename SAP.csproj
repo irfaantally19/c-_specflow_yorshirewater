@@ -1,0 +1,120 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+	  <NoWarn>NU1701,CS0618</NoWarn>
+	  <Platforms>AnyCPU;x86</Platforms>
+	  <PlatformTarget>x86</PlatformTarget> 
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Drivers\**" />
+    <EmbeddedResource Remove="Drivers\**" />
+    <None Remove="Drivers\**" />
+    <SpecFlowFeatureFiles Remove="Drivers\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Drivers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\PromotionsDemotion - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SAP_GUI\CreatesNewMaintenancePlan - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SAP_GUI\MaintenancePlan - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SAP_GUI\PayrollSimulation - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SAP_GUI\TaskList - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TaskList.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TravelExpenses - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\UpdatePersonalDetails - Copy.feature.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\InVoluntaryResignation - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\ManagerTransfers - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\NEWCreateEmployeeFromOnboarding  - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\PayrollSimulation - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\VacancyFfieldRemovedInMSS - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\VoluntaryResignation - Copy.feature.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Desktop.Robot" Version="1.2.4" />
+    <PackageReference Include="InputSimulator" Version="1.0.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+    <PackageReference Include="SAP.GUI.Scripting.net" Version="1.0.0" />
+    <!--<PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="103.0.5060.5300" />-->
+	  <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="105.0.5195.1020" />
+	  <PackageReference Include="SpecFlow" Version="3.9.40" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.9.40" />
+    <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.9.40" />
+    <PackageReference Include="FluentAssertions" Version="6.2.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.1.0" />
+	<PackageReference Include="Core_Framework" Version="1.1.10" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\StartT2App - Copy.feature.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SAP_Web\HRRenewal - Copy.feature.cs" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Desktop.Robot" Version="1.2.4" />
+		<PackageReference Include="InputSimulator" Version="1.0.4" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+		<PackageReference Include="SAP.GUI.Scripting.net" Version="1.0.0" />
+		<PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="105.0.5195.5200" />
+		<PackageReference Include="SpecFlow" Version="3.9.40" />
+		<PackageReference Include="SpecFlow.NUnit" Version="3.9.40" />
+		<PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
+		<PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.9.40" />
+		<PackageReference Include="FluentAssertions" Version="6.2.0" />
+		<PackageReference Include="NUnit3TestAdapter" Version="4.1.0" />
+		<PackageReference Include="Core_Framework" Version="1.1.10" />
+
+	</ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\SAP_Web\" />
+    <Folder Include="Reports\" />
+    <Folder Include="Widgets\" />
+  </ItemGroup>
+
+  
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+	  <None Update="Data\**">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+  </ItemGroup>
+
+  
+
+  <ItemGroup>
+    <Compile Update="Features\SAP_GUI\JobPlanning.feature.cs">
+      <DependentUpon>JobPlanning.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\SAP_GUI\MaintenancePlan.feature.cs">
+      <DependentUpon>MaintenancePlan.feature</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  
+
+  <ItemGroup>
+    <SpecFlowFeatureFiles Update="Features\SAP_GUI\AG01TimeBasedScenario.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SAP_GUI\JobPlanning.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SAP_GUI\ReviewOrderList.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+  </ItemGroup>
+
+</Project>

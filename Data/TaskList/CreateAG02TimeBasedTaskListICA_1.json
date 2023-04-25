@@ -1,0 +1,18 @@
+{
+  "TaskListGroup": "",
+  "MaintenanceStrategy": "",
+  "PlanningPlant": "2100",
+  "TaskListHeader": "Task List Header",
+  "WorkCentre": "ICA_SMP",
+  "Usage": "4",
+  "PlannerGroup": "ICA",
+  "OverallStatus": "4",
+  "TaskListType": "General Maintainence Task List",
+  "OperationDescirption": "Task List Desc",
+  "Work": "100",
+  "Unit": "MIN",
+  "Duration": "100",
+  "CalculationKey": "0",
+  "StandardTextKey": "EN8031Y",
+  "No": "1"
+}

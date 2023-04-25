@@ -1,0 +1,19 @@
+{
+  "MaintenancePlan": "UAT Testing",
+  "MaintenanceItem": "UAT Testing",
+  "Equipment": "101104225",
+  "OrderType": "AG01",
+  "MaintActivityType": "SR",
+  "MaintPlannerGroup": "ICA",
+  "DoNotRelImmediately": true,
+  "FuncLocTaskList": false,
+  "EquipTaskList": false,
+  "Group": "I_ANALPG",
+  "TaskListDescription": "TEST TASK LIST",
+  "MaintenancePlanNumber": "2896",
+  "CallHorizonNumber": "95",
+  "CallHorizonUnit": "DAY",
+  "SchedulingPeriodNumber": "10",
+  "SchedulingPeriodUnit": "DAY",
+  "CompletionRequirement": false
+}
